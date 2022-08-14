@@ -36,14 +36,14 @@ export const ObjectAnimation = styled.div`
 
 export const ObjectTwoAnimation = styled.div`
 
-position: absolute;
-top: ${Math.floor(Math.random() * 100) + '%' };
-left: ${Math.floor(Math.random() * 100) + '%'};
+//position: absolute;
+//top: ${Math.floor(Math.random() * 100) + '%' };
+//left: ${Math.floor(Math.random() * 100) + '%'};
 `
 export const ObjectThreeAnimation = styled.div`
-position: absolute;
-top: ${Math.floor(Math.random() * 100) + '%' };
-left: ${Math.floor(Math.random() * 100) + '%'};
+////position: absolute;
+//top: ${Math.floor(Math.random() * 100) + '%' };
+//left: ${Math.floor(Math.random() * 100) + '%'};
 `
 
 

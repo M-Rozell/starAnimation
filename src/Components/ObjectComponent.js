@@ -15,12 +15,12 @@ const n = 1;
 
 const iconVariant = {
     firstStyle: {
-        scale: [1, 1.5, 2, 2.5, 2.5, 2, 1.5, 1],
-        rotate: [0, 90, 180, 270, 270, 180, 90, 0],
+        scale: [1, 1.5, 2, 2.5, 3, 3, 2.5, 2, 1.5, 1],
+        rotate: [0, 90, 180, 270, 360, 360,270,180, 90, 0],
         transition: { duration: 1 },// repeat: Infinity delay: 1
-
-
+        
     },
+    
     secondStyle: {
         scale: [1, 1.5, 2, 2.5, 2.5, 2, 1.5, 1],
         rotate: [0, 90, 180, 270, 270, 180, 90, 0],
@@ -34,28 +34,24 @@ const iconVariant = {
     }
 }
 
-// const RandomPosition = styled.div`
-// position: absolute;
-// top: ${ props => props.randomX}%;
-// left: ${ props => props.randomY}%;
-// animation: ${divAnimation( props => props.randomY)}
-// 0.5s linear
-// `;
 
 
 
 export default function ObjectComponent() {
+    
 
     const randomize = Math.floor(Math.random() * 100) + '%';
 
-    return [...Array(n)].map((e, i) => <span
+    return [...Array(n)].map((e, i) =>  <span
         key={i}
         className="spanAnimation"
         style={{ top: randomize, left: randomize }}
+        
     >
 
-        <ObjectAnimation>
-            <motion.img
+       <ObjectAnimation>
+              <motion.img
+                
                 className="motionImg"
                 src={Icon}
                 variants={iconVariant}
