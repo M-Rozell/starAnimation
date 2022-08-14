@@ -3,6 +3,8 @@ import { AnimationContainer, AnimationWrapper, ObjectAnimation, ObjectTwoAnimati
 import Icon from './images/starPort50.png'
 import { motion } from "framer-motion";
 import ObjectComponent from "./ObjectComponent";
+import ObjectTwoComponent from "./ObjectTwoComponent";
+
 
 const Animation = () => {
 
@@ -40,7 +42,7 @@ const Animation = () => {
         <AnimationContainer>
             <AnimationWrapper>
 
-                <ObjectComponent />
+                <ObjectTwoComponent />
             
             </AnimationWrapper>
         </AnimationContainer>
