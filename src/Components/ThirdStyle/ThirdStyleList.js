@@ -1,6 +1,6 @@
 import React from 'react'
-import { UlAnimation } from '../animationElements'
-import FirstStyle from './FirstStyle'
+import { UlThreeAnimation } from '../animationElements'
+import ThirdStyle from './ThirdStyle'
 
 const range = (start, end) => {
     return Array(end - start + 1).fill().map((_, idx) => start + idx)
@@ -10,18 +10,18 @@ console.log(rangeResult)
 
 const listAnimations = rangeResult.map((e, i) =>
     <li
-        className='listOneAnimation'
+        className='listThreeAnimation'
         key={i}
-    >{<FirstStyle />}</li>
+    >{<ThirdStyle />}</li>
 )
 
-export default function ObjectOneComponent() {
+export default function ObjectThreeComponent() {
  
 return (
 <>
-       <UlAnimation>
+       <UlThreeAnimation>
             {listAnimations}
-        </UlAnimation> 
+        </UlThreeAnimation> 
 </>
 
     )

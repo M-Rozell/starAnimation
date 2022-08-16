@@ -1,24 +1,37 @@
-import React, { useState } from "react";
-import { AnimationContainer, AnimationWrapper, ObjectAnimation, ObjectTwoAnimation, ObjectThreeAnimation } from "./animationElements";
-import Icon from './images/starPort50.png'
-import { motion, useForceUpdate } from "framer-motion";
-import ObjectComponent from "./ObjectComponent";
-import ObjectTwoComponent from "./ObjectTwoComponent";
-import { useEffect } from "react";
-import FirstStyleList from './FirstStyle/FirstStyleList'
+import React from "react";
+import { AnimationContainer, AnimationOneWrapper, AnimationTwoWrapper, AnimationThreeWrapper } from "./animationElements";
+import { motion} from "framer-motion";
+
+
+import FirstStyleList from './FirstStyle/FirstStyleList';
+import SecondStyleList from "./SecondStyle/SecondStyleList";
+import ThirdStyleList from './ThirdStyle/ThirdStyleList';
+
 
 
 const Animation = () => {
- 
+
     return (
 
         <AnimationContainer>
-            <AnimationWrapper>
 
-            <FirstStyleList /> 
-               
-            
-            </AnimationWrapper>
+
+            <AnimationOneWrapper>
+                <FirstStyleList />
+            </AnimationOneWrapper>
+
+            <AnimationTwoWrapper>
+                <SecondStyleList />
+            </AnimationTwoWrapper>
+
+            <AnimationThreeWrapper>
+                <ThirdStyleList />
+            </AnimationThreeWrapper>
+
+
+
+
+
         </AnimationContainer>
 
     )

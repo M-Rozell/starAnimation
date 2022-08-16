@@ -1,6 +1,6 @@
 import React from 'react'
-import { UlAnimation } from '../animationElements'
-import FirstStyle from './FirstStyle'
+import { UlTwoAnimation } from '../animationElements'
+import SecondStyle from './SecondStyle'
 
 const range = (start, end) => {
     return Array(end - start + 1).fill().map((_, idx) => start + idx)
@@ -10,18 +10,18 @@ console.log(rangeResult)
 
 const listAnimations = rangeResult.map((e, i) =>
     <li
-        className='listOneAnimation'
+        className='listTwoAnimation'
         key={i}
-    >{<FirstStyle />}</li>
+    >{<SecondStyle />}</li>
 )
 
-export default function ObjectOneComponent() {
+export default function ObjectTwoComponent() {
  
 return (
 <>
-       <UlAnimation>
+       <UlTwoAnimation>
             {listAnimations}
-        </UlAnimation> 
+        </UlTwoAnimation> 
 </>
 
     )
